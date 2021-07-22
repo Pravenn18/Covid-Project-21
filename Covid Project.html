@@ -1,0 +1,956 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Project</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="covid.css">
+    <style>
+body{
+    margin: 0%;
+}
+.main-container{
+    /* text-align: center ; */
+}
+.title{
+    font-size: xx-large;
+    color: black;
+    background-color: red;
+    text-align: center;
+    /* height: 30px; */
+    padding: 30px;
+}
+.header-container{
+    text-align: center;
+}
+nav{
+    background-color: black;
+    color: aqua;
+    padding: 8px;
+}
+nav a{
+    color: royalblue;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 20px;
+}
+#img{
+    width: 1900px;
+}
+.Precaution{
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    background-color: gray;
+}
+.h-container{
+    /* padding: 10px; */
+}
+.item1-container{
+    /* display: flex; */
+    text-align: center;
+}
+.item1{
+    font-size: xx-large;
+    /* padding: 10px; */
+}
+.item1-para{
+    font-size: larger;
+}
+span{
+    font-weight: 900;
+}
+.awa-h{
+    text-align: center;
+}
+#item1c-para span{
+    font-weight: 900;
+}
+
+.app-container{
+    display: flex;
+    padding: 10px;
+    width: 1000px;
+    text-align: center;
+    margin-left: 25%;
+}
+#img2{
+    height: 350px;
+    width: 550px;
+    border-radius: 20px;
+}
+#app2a{
+    font-size: 18px;
+    text-decoration: underline;
+}
+#app2b{
+    color: gray;
+}
+#app2c{
+    margin- top: 30px;
+    font-weight: 600;
+}
+a:hover{
+    color: red;
+}
+.main-heading{
+    font-size: xx-large;
+    text-align: center;
+    background-color: gray;
+    height: 80px;
+}
+#item3a{
+    font-size: 21px;
+    font-weight: 600;
+}
+#item3b{
+    font-size: larger;
+}
+.glory-suggestion{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px;
+}
+.glory-suggestion span{
+    font-weight: 800;
+}
+.gs2{
+    font-size: 25px;
+    font-weight: 700;
+}
+.gs2a{
+    font-size: 15px;
+    font-weight: 500;
+}
+.gs2a1{
+    font-weight: 700;
+    padding: 10px;
+}
+.gs2a1 a{
+    text-decoration: underline;
+}
+.live{
+    font-size: xx-large;
+    background-color: grey;
+    height: 80px;
+}
+.table-container{
+    font-size: 12px;
+}
+.table-desc1 span{
+    background-color: rgb(180, 85, 85);
+}
+.table-desc2 span{
+    background-color: rgba(101, 163, 134, 0.774);
+}
+.table-desc3 span{
+    background-color: rgb(197, 193, 193);
+}
+.main-desc{
+    font-size: 15px;
+    padding: 10px;
+}
+.main-desc span{
+    font-weight: 600;
+}
+a{
+    font-weight: 900;
+    color: royalblue;
+    text-decoration: line-through;
+}
+
+.help0{
+    background-color: gray;
+    font-size: xx-large;
+}
+.help01{
+    font-weight: 900;
+}
+.help{
+    background-color: rgba(192, 229, 229, 0.774);
+    padding: 10px;
+}
+input[type=submit]{
+    padding: 10px;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(64, 145, 238);
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: rgb(14, 115, 197);    
+}
+.help a{
+    text-decoration: none;
+}
+.submit a{
+    font-size: x-large;
+    text-decoration: none;
+}
+.donate{
+    font-size: 24px;
+    font-weight: 900;
+}
+.donate1{
+    font-size: 20px;
+    font-weight: 500;
+}
+.Donatelink a{
+    text-decoration: underline;
+}
+.article{
+    background-color: gray;
+    font-size: xx-large;
+}
+.article-container{
+    /* display: flex; */
+}
+#art-img{
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+}
+.article-para{
+    color: grey;
+}
+.sponsour1{
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.sponsour1 span{
+    font-weight: 900;
+}
+.sponsour-speech{
+    font-size: 18px;
+    font-weight: 500;
+}
+.hozomart{
+    font-weight: 500;;
+}
+.hozomart1{
+    padding: 30px;
+}
+.ending{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.note{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.table a{
+    text-decoration: underline;
+}
+.blood-banks{
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: underline;
+    padding: 20px;
+}
+.gs-desc a{
+    text-decoration: underline;
+}
+.gs-desc{
+    font-size: 20px;
+    font-weight: 500;
+}
+.gs-bb{
+    font-size: 30px;
+    font-weight: 500;   
+}
+.gs-desc2{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+.gs-desc2 a{
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="main-container">
+       <div class="title">Corona Virus Disease-2019</div>  
+       <div class="header-container">
+          <nav>
+              <a href="" target="_blank" >Home</a>
+              <a href="https://www.who.int/" target="_blank" >WHO</a>
+              <a href="https://en.wikipedia.org/wiki/COVID-19" target="_blank">COVID-19</a>
+              <a href="https://indianhelpline.com/MUMBAI-HELPLINE-NUMBERS/" target="_blank">Helpline</a>
+              <a href="" target="_blank">About us</a>
+          </nav>
+        </div>
+        <div class="image"><img class="img-fluid" id="img" src="https://static.businessworld.in/article/article_extra_large_image/1585800027_z1BUns_200324_D_HN545_003.JPG" alt="This is an image"></div>
+        <div class="h-container">
+        <div class="title">Precautions for COVID-19</div>
+        <div class="item1-container">
+        <div class="item1">What to do to keep yourself and others safe from COVID-19?</div>
+        <hr>
+        <div class="awa-h">
+        <div class="item1-para" id="item1a-para"><span>•Maintain at least a 1-metre distance between yourself and others</span> to reduce your risk of infection when they cough, sneeze or speak. Maintain an even greater distance between yourself and others when indoors. The further away, the better.</div>
+        <div class="item1-para" id="item1b-para">•Make wearing a mask a normal part of being around other people. The appropriate use, storage and cleaning or disposal are essential to make masks as effective as possible.
+        </div>
+        <hr>
+        <div class="item1" id="item1c-para">Here are the basics of <span>how to wear a mask:</span></div>
+        <hr>
+        <div class="item1-para" id="item1d-para">•Clean your hands before you put your mask on, as well as before and after you take it off, and after you touch it at any time.</div>
+        <div class="item1-para" id="item1e-para">•Make sure it covers both your nose, mouth and chin.</div>
+        <div class="item1-para" id="item1f-para">•When you take off a mask, store it in a clean plastic bag, and every day either wash it if it’s a fabric mask, or dispose of a medical mask in a trash bin.</div>
+        <div class="item1-para" id="item1g-para">•Don’t use masks with valves</div>
+        </div>
+        <hr>
+        <div class="app-container">
+        <div class="app">  
+            <div class="app1"> <img id="img2" src="https://www.livelaw.in/h-upload/2020/04/17/1600x960_373261-aarogya-setu.jpg" alt=""></div>
+            </div>
+            <div class="app2-container">
+            <div class="app2" id="app2a">Use Arogya Setu App</div>
+            <div class="app2" id="app2b">Aarogya Setu is an Indian COVID–19 "contact tracing, syndromic mapping and self-assessment" digital service, primarily a mobile app, developed by the National Informatics Centre under the Ministry of Electronics and Information Technology. The app reached more than 100 million installs in 40 days.</div>
+            <div><a href="https://en.wikipedia.org/wiki/Aarogya_Setu" target="_blank">Wikipedia</a></div>
+            <div class="app2" id="app2c">To Download Aarogya Setu App</div>
+            <div class="app2" id="app2d"><a href="https://play.google.com/store/apps/details?id=nic.goi.aarogyasetu&hl=en_IN&gl=US" target="_blank" >Aarogya Setu</a></div>
+            </div>  
+            </div>
+            <hr>
+            <div class="main-container2">
+                <div class="title">
+                    Awareness
+                </div>
+                <div class="sub heading" id="sub-heading1"><iframe id="video1"  width="560" height="315" src="https://www.youtube.com/embed/rAj38E7vrS8" frameborder="0" allow="fullscreen; controls; autoplay; picture-in-picture; loop;"allowfullscreen></iframe></div>
+            </div>
+            <div>
+                <div class="item3" id="item3a">Wash your hands frequently</div>
+                <div class="item3" id="item3b">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water.
+
+                    Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands.   </div>
+                    <hr>
+                <div class="item3" id="item3a">Maintain social distancing
+                </div>
+                <div class="item3" id="item3b">Maintain at least 1 metre (3 feet) distance between yourself and anyone who is coughing or sneezing.
+
+                    Why? When someone coughs or sneezes they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person coughing has the disease.</div>
+                    <hr>
+                <div class="item3" id="item3a">Avoid touching eyes, nose and mouth</div>
+                <div class="item3" id="item3b">Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and can make you sick.</div>
+                <hr>
+                <div class="item3" id="item3a">Practice respiratory hygiene</div>
+                <div class="item3" id="item3b">Make sure you, and the people around you, follow good respiratory hygiene. This means covering your mouth and nose with your bent elbow or tissue when you cough or sneeze. Then dispose of the used tissue immediately.
+
+                    Why? Droplets spread virus. By following good respiratory hygiene you protect the people around you from viruses such as cold, flu and COVID-19.
+                    
+                    </div>
+                    <hr>
+                    <div class="item3" id="item3a">If you have fever, cough and difficulty breathing, seek medical care early</div>
+                    <div class="item3" id="item3b">Stay home if you feel unwell. If you have a fever, cough and difficulty breathing, seek medical attention and call in advance. Follow the directions of your local health authority.
+
+                        Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections.</div>
+                        <hr>
+                    <div class="item3" id="item3a">Stay informed and follow advice given by your healthcare provider</div>
+                    <div class="item3" id="item3b">Stay informed on the latest developments about COVID-19. Follow advice given by your healthcare provider, your national and local public health authority or your employer on how to protect yourself and others from COVID-19.
+
+                        Why? National and local authorities will have the most up to date information on whether COVID-19 is spreading in your area. They are best placed to advise on what people in your area should be doing to protect themselves.</div>
+            </div>
+            <hr>
+            <div class="title">Contact Section</div>
+            <div><iframe id="video1"  width="560" height="315" src="https://www.youtube.com/embed/WpfOC2oWPAA" frameborder="0"></iframe></div>
+            <hr>
+            <div class="glory-suggestion">Here are some <span> Contact Details</span>,which may helps you</div>
+            <div class="gs1"><img id="art-img" src="https://images.news18.com/ibnlive/uploads/2021/04/1617771750_untitled-design-59.png?impolicy=website&width=534&height=356" alt="This is an image"></div>
+            <div class="gs2">Sonu Sood</div>
+            <div class="gs2a">You can contact Sonu Sood by following ways:</div>
+            <div class="gs2a1">Twitter-<a href="https://twitter.com/SonuSood?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Sonu Sood's Twitter</a></div>
+            <div class="gs2a1">Tollfree helpline Number - 18001213711</div>
+            <div class="gs2a1">Here you can read complete details-<a href="https://economictimes.indiatimes.com/magazines/panache/sonu-sood-launches-toll-free-number-to-make-sure-no-one-gets-left-behind/articleshow/76000981.cms" target="_blank">For Details Click Here</a></div>
+            <hr>
+            <div class="gs11">
+                <table class="table">
+                    <thead>
+                        <tr class="table table-dark">
+                            <th>States/Cities</th>
+                            <th> Ministry Of Health And Family Welfare </th>
+                            <th>Covid-19 Helpline Number</th>
+                            <th>Covid Query</th>
+                            <th>Healthcare</th>
+                            <th>Relief Medical Service</th>
+                            <th>Hospital</th>
+                            <th>Hospital Contact Number</th>
+                            <th>Hospital website</th>
+                        </tr>
+                    </thead>
+                    <tr class="table table-danger">
+                        <th>Delhi</th>
+                        <th></th>
+                        <th>1031</th>
+                        <th>011-23978046 OR 1075</th>
+                        <th>1800-111-747</th>
+                        <th></th>
+                        <th>All India Institute of Medical Sciences (AIIMS)</th>
+                        <th>011-26594405,011- 26594706</th>
+                        <th><a href="aiims.edu/en.html" target="_blank">AIIMS</a></th>
+                    </tr>
+                    <tr class="table table-danger">
+                    <th>Mumbai</th>
+                    <th></th>
+                    <th>022-22027990,020-26127394</th>
+                    <th><a href="http://mahainfocorona.in/" target="_blank">Click Here</a></th>
+                    <th>1075 OR 011-23978046</th>
+                    <th>102 , 1298 , 022-24308888</th>
+                    <th>Bombay Hospital</th>
+                    <th>022-22067676 , 40511111</th>
+                    <th><a href="https://bombayhospital.com/" target="_blank">Click Here</a></th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Haryana</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th> 011-23978046 OR 1075</th>
+                        <th>112</th>
+                        <th>08558893911</th>
+                        <th>102 , 2782457</th>
+                        <th>Military Hospital</th>
+                        <th>2642318</th>
+                        <th></th>
+                    </tr>
+                    <tr class="table table-danger">
+                        <th>Uttar Pradesh</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th>0522-2237515</th>
+                        <th>112</th>
+                        <th>011-23978046 ,1075</th>
+                        <th>108 / 102</th>
+                        <th>CAREER INSTITUTE OF MEDICAL SCIENCES AND HOSPITAL</th>
+                        <th>2960439</th>
+                        <th>0141-2225624 , 0141-2225000 </th>
+                        <th></th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Rajasthan</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th> 011-23978046 OR 1075</th>
+                        <th></th>
+                        <th>0141-2225624 , 0141-2225000</th>
+                        <th>104/108</th>
+                        <th>KAILASH HOSPITAL & HEART INSTITUTE</th>
+                        <th>01494-222222, 222444</th>
+                        <th><a href="https://www.kailashhealthcare.com/Specialities-of-Kailash-Hospital-Behror-Rajasthan" target="_blank">Click Here</a></th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Bihar</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th> 011-23978046 OR 1075</th>
+                        <th></th>
+                        <th>0612-2219090,2219080,
+                            2219030,2219055,2219033</th>
+                            <th>104</th>
+                            <th>AIIMS Patna </th>
+                            <th>0612-2451070</th>
+                            <th><a href="https://aiimspatna.org/" target="_blank">Click Here</a></th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Gujarat</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th> 011-23978046 OR 1075</th>
+                        <th></th>
+                        <th>079-23250818 (Health),079-23251900 (SEOC)</th>
+                        <th>0261-2414139 / 2414195</th>
+                        <th>Civil Hospital</th>
+                        <th>0261-2244456</th>
+                        <th></th>
+                    </tr>
+                    <tr class="table table-danger">
+                        <th>Bangalore</th>
+                        <th><a href="https://www.mohfw.gov.in/" target="_blank">Click Here</a></th>
+                        <th>14410 , 080-46848600 , 1075 , 104</th>
+                        <th></th>
+                        <th>011-23978046 OR 1075</th>
+                        <th>102/108</th>
+                        <th>Indira Gandhi Institute of Child Health Hospital</th>
+                        <th>26342421 / 26343143</th>
+                        <th></th>
+                    </tr>
+                </table>
+                <div class="gs-desc">To View Other States Data--  <a href="https://indianhelpline.com/BANGALORE/" target="_blank">Click Here</a> </div>
+                <hr>
+            </div>            
+            <div class="blood-banks">Blood Banks</div>
+            <hr>
+            <div>
+                <div class="gs-bb">Delhi</div>
+                <table class="table">
+                    <thead>
+                        <tr class="table table-dark">
+                            <th>Blood Banks</th>
+                            <th>Contact Numbers</th>
+                        </tr>
+                    </thead>
+                    <tr class="table table-success">
+                        <th>AIIMS New Delhi</th>
+                        <th>011-26593726 ,
+
+                            26594438 , 26588700</th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Rotary Noida Blood Bank</th>
+                        <th>011-66364887</th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>white Cross Blood Bank</th>
+                        <th>011-26831063,
+
+                            26844140</th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Apollo Blood Bank</th>
+                        <th>011-26825707,
+
+                            26925858,
+                            
+                            26925801
+                            
+                            Extension - 2015</th>
+                    </tr>
+                    <tr class="table table-success">
+                        <th>Indian Red Cross Society</th>
+                        <th>011-23711551</th>
+                    </tr>
+                    <tr class="table table-success">  
+                        <th>Lions Blood Bank New Delhi</th>
+                        <th>011-42258080 ,42258494</th>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="gs-bb">Rajasthan</div>
+            <table class="table">
+                <thead>
+                    <tr class="table table-dark ">
+                        <th>Blood Banks</th>
+                        <th>Contact Numbers</th>
+                    </tr>
+                </thead>
+                <tr class="table table-success">
+                    <th>S.M.S. Hospital</th>
+                    <th>0141-2560291</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Apex Hospital</th>
+                    <th>0141-2751871,2751872</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Bhagwan Mahavir Cancer Hospital</th>
+                    <th>0142-700107,2702899</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Bhandari Hospital</th>
+                    <th>0141-2703851,2705122</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Jain E.N.T Hospital</th>
+                    <th>2742828 / 2742541</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Anand Hospital</th>
+                    <th>2371107</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Tagore Hospital</th>
+                    <th>645 0553-54, 651 5381</th>
+                </tr>
+            </table>
+            <hr>
+            <div class="gs-bb">Mumbai</div>
+            <table class="table">
+                <thead>
+                    <tr class="table table-dark">
+                        <th>Blood Banks</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tr class="table table-success">
+                    <th>St. George Blood Bank</th>
+                    <th>22620344,22620242</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>J.J. Hospital Blood Bank</th>
+                    <th>23769400</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>G.T. Hospital Blood Bank</th>
+                    <th>22621464, 22621465, 22621467</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Kama Hospital Blood Bank</th>
+                    <th>22611648</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Indian Red Cross Society</th>
+                    <th>22663560</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Hinduja National Hospital</th>
+                    <th>24452222, 24451515, 24447752</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Tata Memorial Hospital Blood Bank</th>
+                    <th>24149750, 24161413, 24170000, 24127096</th>
+                </tr>
+            </table>
+            <hr>
+            <div class="gs-bb">Bangalore</div>
+            <table class="table">
+                <thead>
+                    <tr class="table table-dark">
+                        <th>Blood Bank</th>
+                        <th>Contact Number</th>
+                    </tr>
+                </thead>
+                <tr class="table table-success">
+                    <th>Bangalore Bapist Hospital</th>
+                    <th>23330322 / 23330323</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Bangalore Hospital</th>
+                    <th>26562753 / 26565494</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Bangalore Institute of Oncology</th>
+                    <th>	
+                        22225698 / 22225644</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Rotary Blood Bank</th>
+                    <th>25287903</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Crace Blood Bank</th>
+                    <th>	
+                        23336608</th>
+                </tr>
+                <tr class="table table-success">
+                    <th>Karnataka Red Cross Blood Bank</th>
+                    <th>22268435</th>
+                </tr>
+            </table>
+            <div class="gs-desc2">To View Blood Banks of all States-- <a href="https://indianhelpline.com/MUMBAI-HELPLINE-NUMBERS/" target="_blank">Click Here</a> </div>
+            <div class="title">Corona Virus Update</div>
+            <div class="container">
+                <table class="table">
+                    <thead>
+                        <tr class="table table-dark     ">
+                            <th>Country Name</th>
+                            <th>Total Cases</th>
+                            <th>New Cases</th>
+                            <th> Total Deaths</th>
+                            <th>Total Recovered</th>
+                            <th>Active Cases</th>
+                            <th>Serious Critical</th>
+                            <th>Total Tests</th>
+                            <th>Population</th>
+                        </tr>
+                    </thead>
+                    <tr class="table table-danger">
+                        <td>India</td>
+                        <td>16,869,825</td>
+                        <td>+267,369</td>
+                        <td>191,281</td>
+                        <td>14,018,818</td>
+                        <td>2,659,726</td>
+                        <td>8,944</td>
+                        <td>276,199,222</td>
+                        <td>1,390,975,476</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>USA</td>
+                        <td>32,740,678</td>
+                        <td>+4,974</td>
+                        <td>585,123</td>
+                        <td>25,299,109</td>
+                        <td>6,856,446</td>
+                        <td>9,830</td>
+                        <td>437,217,312</td>
+                        <td>332,574,397</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>Brazil</td>
+                        <td>14,238,110</td>
+                        <td></td>
+                        <td>386,623</td>
+                        <td>12,711,103</td>
+                        <td>1,140,384</td>
+                        <td>8,318</td>
+                        <td>43,538,104</td>
+                        <td>213,782,412</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>France</td>
+                        <td>5,440,946</td>
+                        <td></td>
+                        <td>102,496</td>
+                        <td>4,275,950</td>
+                        <td>1,062,500</td>
+                        <td>5,962</td>
+                        <td>73,826,703</td>
+                        <td>65,390,614</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>Russia</td>
+                        <td>4,753,789</td>	
+                        <td>+8,828</td>	
+                        <td>107,900</td>
+                        <td>4,380,468</td>	
+                        <td>265,421</td>	
+                        <td>2,300</td>
+                        <td>127,500,000</td>	
+                        <td>145,985,225</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>UK</td>
+                        <td>4,403,170</td>	
+                        <td>+2,061</td>
+                        <td>127,417</td>	
+                        <td>4,183,543</td>
+                        <td>92,210</td>
+                        <td>243</td>
+                        <td>148,737,754</td>
+                        <td>68,174,839</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>Italy</td>
+                        <td>3,949,517</td>
+                        <td>+13,817</td>
+                        <td>119,021</td>
+                        <td>3,369,048</td>
+                        <td>461,448</td>
+                        <td>2,894</td>
+                        <td>56,886,535</td>
+                        <td>60,389,660</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>Spain</td>
+                        <td>3,468,617</td>	
+                        <td></td>
+                        <td>77,591</td>
+                        <td>3,163,849</td>
+                        <td>227,177</td>    
+                        <td>2,297</td>
+                        <td>44,374,223</td>
+                        <td>46,769,469</td>
+                    </tr>
+                    <tr class="table table-danger">
+                        <td>Germany</td>
+                        <td>3,270,878</td>
+                        <td>+9,114</td>
+                        <td>82,054</td>
+                        <td>2,882,300</td>
+                        <td>306,524</td>
+                        <td>5,049</td>	
+                        <td>54,061,332</td>
+                        <td>84,001,076</td>
+                    </tr>
+                    <tr class="table table-success">
+                        <td>Saint Kitts and Nevis</td>
+                        <td>44</td>
+                        <td></td>
+                        <td></td>
+                        <td>44</td>
+                        <td>0</td>
+                        <td></td>
+                        <td>12,381</td>
+                        <td>53,504</td>
+                    </tr>
+                    <tr class="table table-light">
+                        <td>MS Zaandam</td>
+                        <td>9</td>
+                        <td></td>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="table table-light">
+                        <td>Vanuatu</td>
+                        <td>4</td>
+                        <td></td>
+                        <td>1</td>
+                        <td>3</td>
+                        <td>0</td>
+                        <td></td>
+                        <td>470</td>
+                        <td>312,918 </td>
+                    </tr>
+                    <tr class="table table-success">
+                        <td>Marshall Islands</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                        <td>59,513</td>
+                   </tr>
+                   <tr class="table table-success">
+                    <td>Greenland</td>
+                    <td>31</td>
+                    <td></td>
+                    <td></td>
+                    <td>31</td>
+                    <td>0</td> 
+                    <td></td>
+                    <td>20,699</td>
+                    <td>56,850</td>
+                </tr>
+                <tr class="table table-success">
+                    <td>Micronesia</td>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td>115,998</td>
+                </tr>
+                </table>
+
+                <div class="table-container">
+                <div class="table-desc1">
+                    <span>Highlighted in Red</span>=Virus is increasing rapidly
+                </div>
+                <div class="table-desc2">
+                <span>Highlighted in green</span>=all cases have recovered from the infection</div>
+                <div class="table-desc3">
+                    <span>Highlighted in Grey</span>= all cases have had an outcome (there are no active cases)
+                </div>
+            </div>
+            <div class="main-desc">
+                (The given Covid-19 data is taken from website <span>Worldometer</span>.Updated on 24 April 2021.The given data is not live,if you wanna see live data then click on the link given below)
+            </div>
+            <div><a href="https://www.worldometers.info/coronavirus/" target="_blank">Worldometer </a></div>
+            <hr>
+            <div class="title">Helping Hand</div>
+            <div class="help01">Fill this form and then we will try to get tour required needs....</div>
+            <div class="help">
+                <div class="help1">
+                    <p>Name: <input type="name" required placeholder="e.g. Pravenn"></p>
+                    <fieldset>
+                        <legend>Gender:</legend>
+                        <p>Male: <input type="radio" name="gender" id="gender" required>
+                        Female: <input type="radio" name="gender" id="gender" required>
+                        </p>
+                    </fieldset>
+                    <p>Address: <textarea name="address" id="" cols="60" rows="4" required></textarea></p>
+                    <p>Email: <input type="email" name="email" id="email" required></p>
+                    <P>Pincode: <input type="number" name="pincode" id="pincode" required></P>
+                </div>
+                <div class="help2">
+                    <p>What u Want?
+                    <select name="help type" id="help type">
+                        <option value="">--Select--</option>
+                        <option value="1"><a href="https://www.thebetterindia.com/253310/oxygen-cylinders-tank-free-supply-ngos-covid-19-coronavirus-mumbai-delhi-indore-hyderabad-yos191/">Oxygen Cylinders</a></option>
+                        <option value="2">Beds</option>
+                        <option value="3">Instant Doctor</option>
+                        <option value="4">Plasma</option>
+                        <option value="6">Ventilator</option>
+                        <option value="7">ICU</option>
+                        <option value="8">Others</option>
+                    </select>
+                    </p>
+                </div>
+                <div class="submit">
+                <a type="Submit" href="https://www.thebetterindia.com/253310/oxygen-cylinders-tank-free-supply-ngos-covid-19-coronavirus-mumbai-delhi-indore-hyderabad-yos191/" target="_blank">Submit</a>
+                </div>
+            </div>
+            <hr>
+            <div class="donate">You can also Donate some amount,this little effort may save the lives of many....</div>
+            <div class="donate1">Here are some trusted sites,where you can contribute:</div>
+            <div class="Donatelink">Akshaya Patra Organisation:  <a href="https://www.akshayapatra.org/covid-relief-services" target="_blank">Akshaya Patra</a></div>
+            <div class="Donatelink">PM Cares Fund: <a href="https://www.pmcares.gov.in/en/" target="_blank">PM Cares Fund</a></div>
+            <div class="Donatelink">A Zomato Organisation: <a href="https://www.feedingindia.org/donate/covid19" target="_blank">Feeding India</a></div>
+            <div class="Donatelink">Help Age India Organisation: <a href="https://www.helpageindia.org/covid-19/" target="_blank" >Help Age India</a></div>
+            <div class="Donatelink"> Concern India Foundation: <a href="https://www.concernindiafoundation.org/donate-for-covid-19-relief-in-india/" target="_blank">Concern India</a></div>
+            <div class="Donatelink">Uday Foundation for Ration and Food for Homeless: <a href="https://www.udayfoundation.org/coronavirus-disease-covid-19/" target="_blank">Uday Foundation</a></div>
+            <div class="Donatelink">Association for India's Development<a href="https://aidindia.org/donate/covid-relief-fund/" target="_blank" >Aid India</a></div>
+            <hr>
+            <div class="title">Articles</div>
+            <div class="article-container">
+           
+            <div class="article-img">
+            <div class="article1"><img id="art-img" src="http://images.edexlive.com/uploads/user/imagelibrary/2020/5/26/original/WHO-reforms-edited_WHO.jpg" alt="This is an image"></div>
+            </div>
+            <div class="article-para">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+
+                Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.  Older people, and those with underlying medical problems like cardiovascular disease, diabetes, chronic respiratory disease, and cancer are more likely to develop serious illness.
+                
+                The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. 
+                
+                The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).
+                
+                Stay informed:</div>
+                <div><a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank">For Full Article Click Here</a></div>
+                <hr>
+                <div class="article-img"><img id="art-img" src="https://m.economictimes.com/thumb/msid-74665367,width-1200,height-900,resizemode-4,imgsize-980841/from-the-trumpet-shaped-protrusion-at-the-centre-of-a-daffodil-or-narcissus-to-a-part-of-a-cornice-with-a-vertical-face-to-the-most-popular-shape-of-chandeliers-corona-has-long-been-an-acceptable-part-of-society-.jpg"alt="This is an image"></div>
+                <div class="article-para">A coronavirus is a kind of common virus that causes an infection in your nose, sinuses, or upper throat. Most coronaviruses aren't dangerous.
+
+                    In early 2020, after a December 2019 outbreak in China, the World Health Organization identified SARS-CoV-2 as a new type of coronavirus. The outbreak quickly spread around the world.
+                    
+                    COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract (sinuses, nose, and throat) or lower respiratory tract (windpipe and lungs).
+                    
+                    It spreads the same way other coronaviruses do, mainly through person-to-person contact. Infections range from mild to deadly.
+                    
+                    SARS-CoV-2 is one of seven types of coronavirus, including the ones that cause severe diseases like Middle East respiratory syndrome (MERS) and sudden acute respiratory syndrome (SARS). The other coronaviruses cause most of the colds that affect us during the year but aren’t a serious threat for otherwise healthy people.</div>
+                    <div><a href="https://www.webmd.com/lung/coronavirus" target="_blank">For fulll Article Click Here</a></div>
+                    <hr>
+                    <div><img id="art-img" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202003/corona-4942823_1280_0.png?yFvLVbE7nw_mYLPkLawYbQIc8vNHu6oV&size=1200:675" alt="This is an image"></div>
+                    <div class="article-para">In a real-world test, an mRNA-based vaccine protected care-home residents and staff against a new SARS-CoV-2 variant.
+
+                        On 1 March, an unvaccinated health-care worker at a Kentucky care home tested positive for SARS-CoV-2. At that time, 90% of the home’s residents and 53% of its health-care workers had received their second dose of the Pfizer–BioNTech vaccine; the vast majority had received their second shot more than 2 weeks before the worker’s infection was identified.
+                        
+                        Alyson Cavanaugh at the US Centers for Disease Control and Prevention and her colleagues report that 46 of the 199 people at the care home were infected during the outbreak. (A. M. Cavanaugh et al. Morb. Mortal. Wkly Rep. https://doi.org/f732; 2021). The researchers estimate that the vaccine was 86.5% and 87.1% effective at preventing COVID-19 among residents and staff, respectively, who were more than 2 weeks past their second dose. The shots were even more effective at preventing hospitalization, although one vaccinated resident died.
+                        
+                        Genome sequencing of samples from 27 individuals identified a variant circulating during the outbreak known as R.1, which contains mutations that have been linked to increased transmissibility and immune evasion.
+                        
+                        </div>
+                        <div><a href="https://www.nature.com/articles/d41586-020-00502-w" target="_blank">For full Article Click Here</a></div>
+                        <hr>
+                        <div><img id="art-img" src="https://blog.malwarebytes.com/wp-content/uploads/2020/03/shutterstock_1499104574.png" alt="This is an image"></div>
+                        <div class="article-para">The coronavirus outbreak began in Wuhan, China, in December 2019.
+                            Known as SARS-CoV-2, the virus has resulted in more than 144 million infections and more than 3 million deaths.
+                            SARS-CoV-2 infection causes a respiratory illness called COVID-19.
+                            COVID-19 has now been reported on every continent.
+                            Keep up to date with the latest research and information about COVID-19 here.
+                            For vaccine information, visit our live vaccine updates article.
+                            04/23/2021 15:40 GMT — Is there a link between COVID-19 and Parkinson’s disease?
+                            
+                            Although extremely rare, Parkinson’s-like symptoms have occurred in a few people with COVID-19. Scientists are now investigating whether there is a link between SARS-CoV-2 and Parkinson’s disease. In a recent feature, MNT explores the connection.
+                            
+                            Read the feature here.
+                            
+                            04/23/2021 09:52 GMT — India: COVID-19 surge continues to worsen
+                            
+                            India continues to report record numbers of COVID-19 cases, registering 332,730 new cases today. The already fragile health system is failing to keep up with the influx of patients. In desperation, some hospitals have taken to social media to ask the government to provide more oxygen.</div>
+                            <div><a href="https://www.medicalnewstoday.com/articles/live-updates-coronavirus-covid-19#1" target="_blank">For full Article Click Here</a></div>
+                            <hr>
+                            <div class="title">Sponsors</div>
+                            <div class="sponsour1">Here are few word from<span> me and my team</span> for our <span>Sponsor Hozomart</span></div>
+                            <div class="sponsour-speech">Me and my Team are so privileged and humbled to receive this sponsourship.
+                                 There are many challenges that come with living with lupus. College has presented new challenges for me and my team and it is so nice to feel support from you. I am so blessed to have this sponsourship and I cannot thank you enough.
+                                 Thank you again for taking the time out of your life to sponsor us, your generosity will not go unappreciated.</div>
+                                 <hr>
+                                 <div class="hozomart">Download Hozomart App</div>
+                                 <div class="hozomart1"><a href="https://play.google.com/store/apps/details?id=com.appp.hozomart&hl=en_IN&gl=US" target="_blank">Hozomart</a></div>
+                                 <hr>
+                                 <div class="ending">Stay Safe,Wear Mask</div>
+                                 <hr>
+                                 <div class="note"><span>Note:</span>This site is <span>non-responive</span>,so make sure that you open this site on your laptop,otherwise functions will not work properly.</div>
+    </div>    
+</body>
+</html>
